@@ -1,6 +1,10 @@
 spring:
   config:
     import: aws-parameterstore:/spring-plus/prod/
+  cloud:
+    aws:
+      s3:
+        bucket: plus-soomin0209-prod-uploads
   datasource:
     url: jdbc:mysql://${DB_HOST}:${DB_PORT}/${DB_NAME}
     username: ${DB_USERNAME}
